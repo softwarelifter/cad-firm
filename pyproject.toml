@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "agent-cs"
+version = "0.1.0"
+description = ""
+authors = ["softwarelifter <softwarelifter@gmail.com>"]
+readme = "README.md"
+packages = [{include = "agent_cs"}]
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+crewai = {extras = ["tools"], version = "^0.30.11"}
+pydantic = "^2.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
